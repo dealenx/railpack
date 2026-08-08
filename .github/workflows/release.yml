@@ -6,6 +6,8 @@ on:
     # pushing a new tag is what triggers the release process
     tags:
       - "v*"
+  # allow manually running the release from a branch (useful for fork releases)
+  workflow_dispatch:
 
 permissions:
   contents: write
